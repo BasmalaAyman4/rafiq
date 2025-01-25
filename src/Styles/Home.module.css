@@ -3,7 +3,8 @@
 }
 
 
-.stories__body {
+.stories__body,
+.cards {
     display: flex;
     align-items: center;
     column-gap: 20px;
@@ -24,7 +25,7 @@
 }
 
 /* Ensure part of the next image is visible */
-.stories__body::after {
+.stories__body::after{
     content: '';
     flex: 0 0 40px;
     /* Space to show part of the next image */
@@ -33,8 +34,57 @@
     display: none;
     /* For Chrome, Safari, and Opera */
 }
+
+.for__body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+
+}
+.for__body p{
+    color: rgb(117, 117, 117);
+}
+.card{
+    width: 400px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
+.card__body{
+    position: relative;
+}
+.card__caption{
+    position: absolute;
+    bottom: 0px;
+    color: #fff;
+    padding: 0 15px;
+}
+.card__img{
+    width: 100%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.card__title{
+    padding: 20px 0 0 0;
+}
+.card__title span{
+    color: #1b1edb;
+}
+
+
 /* Responsive Media Queries */
 @media (max-width: 768px) {
+
     .stories__body {
         column-gap: 15px;
         padding: 10px;
@@ -45,9 +95,11 @@
         width: 100px;
         height: 100px;
     }
+       
 }
 
 @media (max-width: 480px) {
+
     .stories__body {
         column-gap: 10px;
         padding: 10px;
@@ -57,5 +109,75 @@
         width: 80px;
         height: 80px;
     }
+      
 }
 
+.cards {
+    display: flex;
+    gap: 20px;
+    /* Space between cards */
+    padding: 20px;
+    overflow-x: auto;
+    /* Enable horizontal scrolling */
+    scroll-behavior: smooth;
+    position: relative;
+}
+
+.cards::-webkit-scrollbar {
+    display: none;
+    /* Hide scrollbar */
+}
+
+.card {
+    width: 400px;
+        background-color: #fff;
+        padding: 15px;
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+        rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.card__body {
+    position: relative;
+}
+
+.card__caption {
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    padding: 0 15px;
+}
+
+.card__img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.card__title {
+    padding: 10px 0 0 0;
+}
+
+.card__title span {
+    color: #1b1edb;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 768px) {
+    .cards {
+        gap: 10px;
+        /* Reduce gap between cards for mobile */
+    }
+
+    .card {
+        flex: 0 0 70%;
+        /* Make cards narrower to show part of the next one */
+    }
+}
