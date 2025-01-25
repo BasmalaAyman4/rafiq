@@ -1,25 +1,7 @@
 .banner__img{
     width: 100%;
 }
-.stories__body{
-    display: flex;
-    align-items: center;
-    column-gap: 20px;
-}
-.stories__img{
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
-    padding: 5px;
-        border: 3px solid #2f85e7;
-}
-@media (min-width:0px) and (max-width:600px) {
 
-}
 
 .stories__body {
     display: flex;
@@ -47,7 +29,10 @@
     flex: 0 0 40px;
     /* Space to show part of the next image */
 }
-
+.stories__body::-webkit-scrollbar {
+    display: none;
+    /* For Chrome, Safari, and Opera */
+}
 /* Responsive Media Queries */
 @media (max-width: 768px) {
     .stories__body {
