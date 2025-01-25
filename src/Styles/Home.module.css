@@ -176,6 +176,13 @@
         /* Reduce gap between cards for mobile */
     }
 
+.card__caption{
+    bottom: 0px;
+    font-size: 12px;
+}
+.card__caption h2{
+    font-size: 20px;
+}
     .card {
         flex: 0 0 70%;
         /* Make cards narrower to show part of the next one */
