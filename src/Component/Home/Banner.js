@@ -1,7 +1,8 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
 import slide from '../../assets/images/slider-1.jpg'
-import slide2 from '../../assets/images/home-adventures-01.jpg'
+import slide2 from '../../assets/images/footer-bg.jpg'
+import slide3 from '../../assets/images//icon-section-bg.jpg'
 import styles from '../../Styles/Home.module.css'
 const Banner = () => {
   return (
@@ -15,13 +16,13 @@ const Banner = () => {
                       </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
-                      <img alt='' src={slide} className={`${styles.banner__img}`} />
+                      <img alt='' src={slide3} className={`${styles.banner__img}`} />
                       <Carousel.Caption>
                           <h3>Discover</h3>
                       </Carousel.Caption>
               </Carousel.Item>
               <Carousel.Item>
-                      <img alt='' src={slide} className={`${styles.banner__img}`} />
+                      <img alt='' src={slide2} className={`${styles.banner__img}`} />
                       <Carousel.Caption>
                           <h3>Discover</h3>
                       </Carousel.Caption>

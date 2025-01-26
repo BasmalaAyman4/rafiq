@@ -57,7 +57,8 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
 }
-.card__body{
+.card__body,
+.country__body{
     position: relative;
 }
 .card__caption{
@@ -80,7 +81,18 @@
 .card__title span{
     color: #1b1edb;
 }
-
+.country__body .card__img{
+    width: 200px;
+    height: 200px;
+}
+.country__title {
+    color: #1b1edb;
+    font-size: 22px;
+    margin-top: 10px;
+}
+.country__para{
+    color: #4f4f50;
+}
 
 /* Responsive Media Queries */
 @media (max-width: 768px) {
@@ -169,6 +181,72 @@
     color: #1b1edb;
 }
 
+
+
+/* From Uiverse.io by Creatlydev */
+.button {
+    line-height: 1;
+    background-color: transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.35em;
+    padding: 0.75em 1em;
+    padding-right: 1.25em;
+    color: #fff;
+    border: 1px solid transparent;
+    font-weight: 700;
+    border-radius: 2em;
+    font-size: 1rem;
+    box-shadow: 0 0.7em 1.5em -0.5em hsla(249, 62%, 51%, 0.745);
+    transition: transform 0.3s;
+letter-spacing: 2px;
+    background: linear-gradient(90deg,
+            rgba(77, 54, 208, 1) 0%,
+            rgba(132, 116, 254, 1) 100%);
+}
+
+.button:hover {
+    border-color: #f4f5f2;
+}
+
+.button:active {
+    transform: scale(0.98);
+    box-shadow: 0 0.5em 1.5em -0.5em hsla(249, 62%, 51%, 0.745);
+}
+.poeple__card{
+    text-align: center ;
+    border: 1px solid #1b1edb;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    padding: 15px 0;
+}
+.People__img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin-bottom: 10px;
+}
+@media (min-width:0px) and (max-width:600px) {
+    .poe__body h3{
+        font-size: 15px;
+    }
+    .poe__body p{
+        font-size: 14px;
+    }
+}
 /* Responsive Styles for Mobile */
 @media (max-width: 768px) {
     .cards {
@@ -176,14 +254,17 @@
         /* Reduce gap between cards for mobile */
     }
 
-.card__caption{
-    bottom: 0px;
-    font-size: 12px;
-}
-.card__caption h2{
-    font-size: 20px;
-}
-    .card {
+    .card__caption {
+        bottom: 0px;
+        font-size: 12px;
+    }
+
+    .card__caption h2 {
+        font-size: 20px;
+    }
+
+    .card,
+    .poeple__card {
         flex: 0 0 70%;
         /* Make cards narrower to show part of the next one */
     }
