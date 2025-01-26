@@ -131,7 +131,8 @@ footer{
     -ms-border-radius: 20px;
     -o-border-radius: 20px;
 }
-.css-i4bv87-MuiSvgIcon-root {
+.css-i4bv87-MuiSvgIcon-root,
+.css-vubbuv {
   fill: #fff !important;
   width: 1.5em !important;
   height: 1.5em !important;
