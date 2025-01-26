@@ -107,3 +107,33 @@ body {
     border-radius: 10px;
   }
 }
+
+footer{
+  display: none;
+}
+@media (min-width:0px) and (max-width:600px) {
+  footer{
+    background-color: #4144eef5;
+    position: fixed;
+    width: 90%;
+    bottom: 0px;
+    color: #fff;
+    font-size: 25px;
+    padding: 10px 20px;
+    z-index: 1000000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 20px;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+.css-i4bv87-MuiSvgIcon-root {
+  fill: #fff !important;
+  width: 1.5em !important;
+  height: 1.5em !important;
+}
+}

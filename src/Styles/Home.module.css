@@ -268,4 +268,7 @@ letter-spacing: 2px;
         flex: 0 0 70%;
         /* Make cards narrower to show part of the next one */
     }
+        .people{
+margin-bottom: 70px;
+        }
 }

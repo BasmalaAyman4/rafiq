@@ -4,6 +4,9 @@ import { Link, NavLink, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Container from 'react-bootstrap/Container';
 import logo from '../assets/images/logo.png'
+import HomeIcon from '@mui/icons-material/Home';
+import MapIcon from '@mui/icons-material/Map';
+import PersonIcon from '@mui/icons-material/Person';
 const Header = (props) => {
     const { t, i18n } = useTranslation();
 
@@ -48,6 +51,14 @@ const Header = (props) => {
                     </div>
                 </Container>
             </div>
+
+<footer>
+                <NavLink to='/'><HomeIcon/></NavLink>
+                <NavLink to='/trips'><MapIcon /></NavLink>
+                <NavLink to='/profile'><PersonIcon /></NavLink>
+
+
+</footer>
 
         </>
     )

@@ -8,7 +8,7 @@ import img2 from '../../assets/images/error_image.png'
 const People = () => {
     return (
         <>
-            <section>
+            <section className={`${styles.people}`}>
                 <Container>
                     <div className={`${styles.for__body} ${styles.poe__body}`}>
                         <h3>People with similar interests</h3>
