@@ -39,7 +39,7 @@ const Header = (props) => {
                             <ul className={`${styles.nav__list}`}>
                                 <li className={`${styles.nav__item}`}><NavLink to='/' className={`${styles.nav__link}`}>{t("Home")}</NavLink></li>
                                 <li className={`${styles.nav__item}`}><NavLink to='/trips' className={`${styles.nav__link}`}>{t("Trips")}</NavLink></li>
-                                <li className={`${styles.nav__item}`}><NavLink to='/signup' className={`${styles.nav__link}`}>{t("Signup")}</NavLink></li>
+                                <li className={`${styles.nav__item}`}><NavLink to='/Profile' className={`${styles.nav__link}`}>{t("Profile")}</NavLink></li>
 
                             </ul>
                         </div>
@@ -55,7 +55,7 @@ const Header = (props) => {
 <footer>
                 <NavLink to='/'><HomeIcon/></NavLink>
                 <NavLink to='/trips'><MapIcon /></NavLink>
-                <NavLink to='/profile'><PersonIcon /></NavLink>
+                <NavLink to='/Profile'><PersonIcon /></NavLink>
 
 
 </footer>

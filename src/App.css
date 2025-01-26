@@ -7,3 +7,6 @@ body[dir='ltr'] {
     direction: ltr;
     text-align: left;
 }
+hr{
+color: #eee !important;
+}
